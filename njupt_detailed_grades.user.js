@@ -19,7 +19,7 @@
 // @name         南京邮电大学(NJUPT) 查询平时分
 // @id           njupt_detailed_grades
 // @namespace    https://alampy.com/
-// @version      0.3
+// @version      0.3.1
 // @description  南京邮电大学(NJUPT) 查询平时分
 // @author       alampy
 // @license      AGPL-3.0-or-later
