@@ -35,9 +35,15 @@
         let tag = '';
         let values = [];
         let stack = [];
+        let isEscaped = false;
 
         for (let char of tagString) {
-            if (char === '<') {
+            if (isEscaped) {
+                tag += char;
+                isEscaped = false;
+            } else if (char === '\\') {
+                isEscaped = true;
+            } else if (char === '<') {
                 stack.push({ tag: tag, length: values.length });
                 tag = '';
             } else if (char === '>') {
@@ -108,7 +114,7 @@
             if (typeof mainSubject !== 'object') {
                 continue;
             }
-            const subjectInfo = mainSubject.t[3].l.filter((x) => typeof x === 'object').map((x) => x.t[0].p[0].p[2].l[0].replace('&nbsp\\', 'NA').trim());
+            const subjectInfo = mainSubject.t[3].l.filter((x) => typeof x === 'object').map((x) => x.t[0].p[0].p[2].l[0].replace('&nbsp;', 'NA').trim());
             const row = displaySubjectInfo(subjectInfo);
             table.appendChild(row);
         }
