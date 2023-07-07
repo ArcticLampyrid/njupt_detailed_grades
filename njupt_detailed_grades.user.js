@@ -24,7 +24,7 @@
 // @author       alampy
 // @license      AGPL-3.0-or-later
 // @match        http://jwxt.njupt.edu.cn/xscj_gc.aspx*
-// @match        *://vpn.njupt.edu.cn:8443/http/webvpn5e607416b84322620fcfebad55f2c381efb3e3d8de97685feb46fd2e866a8ae9/xs_main.aspx*
+// @match        *://vpn.njupt.edu.cn:8443/http/webvpn5e607416b84322620fcfebad55f2c381efb3e3d8de97685feb46fd2e866a8ae9/xscj_gc.aspx*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=i.njupt.edu.cn
 // @grant        GM_registerMenuCommand
 // @require      https://unpkg.com/sweetalert/dist/sweetalert.min.js
